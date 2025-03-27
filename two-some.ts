@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/two-sum/description/
 import { runner } from "./testRunner";
 
 const createIndexMap = (numbers: number[]) => {
@@ -12,9 +13,7 @@ const createIndexMap = (numbers: number[]) => {
   return numberIndexes;
 };
 
-// https://leetcode.com/problems/two-sum/description/
 function twoSum(numbers: number[], target: number): number[] {
-  // O(n)으로 만들방법
   const set = new Set(numbers);
   const indexMap = createIndexMap(numbers);
   let result;
